@@ -14,7 +14,7 @@
 
 
 - name: install and run mysql
-  hosts: 172.31.23.113
+  hosts: 172.31.23.112
   become: yes
   tasks:
   - name: install mysql
