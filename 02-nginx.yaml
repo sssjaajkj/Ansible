@@ -1,5 +1,5 @@
 - name: install and run nginx
-  hosts: web
+  hosts: 172.31.23.113
   become: yes #equal to -b in adhoc command, getting root acees
   tasks:
   - name: install nginx
@@ -12,5 +12,3 @@
       state: started
       enabled: yes
 
-
-      
