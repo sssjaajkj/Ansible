@@ -12,3 +12,15 @@
       state: started
       enabled: yes
 
+
+  tasks:
+  - name: install mysql
+    ansible.builtin.dnf:
+      name: mysql
+      state: latest
+  - name: start mysql
+    ansible.builtin.service:
+      name: mysql
+      state: started
+      enabled: yes    
+
