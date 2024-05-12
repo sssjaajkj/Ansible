@@ -13,6 +13,9 @@
       enabled: yes
 
 
+- name: install and run mysql
+  hosts: 172.31.23.114
+  become: yes
   tasks:
   - name: install mysql
     ansible.builtin.dnf:
