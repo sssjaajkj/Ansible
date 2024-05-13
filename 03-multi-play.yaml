@@ -20,9 +20,9 @@
       msg: "Hello I am from PLAY-3 and Task-3"  
 
 
-- name: PLAY-3
-  hosts: localhosts
+- name: PLAY-4
+  hosts: localhost
   tasks: 
-  - name: PLAY_3 and TASK-3
+  - name: PLAY_4 and TASK-4
     ansible.builtin.debug:
-      msg: " Hello I am from PLAY-3 and Task-3"        
+      msg: " Hello I am from PLAY-4 and Task-4"        
