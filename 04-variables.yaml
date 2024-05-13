@@ -1,13 +1,17 @@
 - name: variable
   hosts: localhost
-  vars:
+  vars: #Paly level variable
     course: "Ansible" #defining a variable
     Trainer: "sivakumar"
     Duration: "420hrs"
 
   tasks:
-  - name: print variable
+  - name: print override information
     vars:
-      course: "Devops"
+      course: "Devops" # Task level variables it override
     ansible.builtin.debug:
       msg: "Hi, we are learing {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+
+  -name: print information
+   ansible.builtin.debug:
+     msg:  "Hi, we are learing {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
