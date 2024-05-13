@@ -3,7 +3,7 @@
   vars:
     course: "Ansible" #defining a variable
     Trainer: "sivakumar"
-    Duration: "120hrs"
+    Duration: "420hrs"
 
   tasks:
   - name: print variable
