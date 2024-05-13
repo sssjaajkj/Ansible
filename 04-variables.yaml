@@ -12,6 +12,6 @@
     ansible.builtin.debug:
       msg: "Hi, we are learing {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
 
-  -name: print information
+  - name: print information
    ansible.builtin.debug:
      msg:  "Hi, we are learing {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
