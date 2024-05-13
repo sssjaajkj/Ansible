@@ -13,6 +13,14 @@
       msg: "Hello I am from PLAY-2 and Task-2"  
 
 - name: PLAY-3
+  hosts: localhost
+  tasks:
+  - name: PLAY-3 and TASK-3
+    ansible.builtin.debug: #print mesg like echo
+      msg: "Hello I am from PLAY-3 and Task-3"  
+
+
+- name: PLAY-3
   hosts: localhosts
   tasks: 
   - name: PLAY_3 and TASK-3
